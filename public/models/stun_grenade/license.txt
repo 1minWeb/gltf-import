@@ -1,0 +1,8 @@
+Model Information:
+* title:	Stun Grenade
+* source:	https://sketchfab.com/3d-models/stun-grenade-a219d44f755d4b258267a7a9077b5274
+* author:	MaX3Dd (https://sketchfab.com/MaX3Dd)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
