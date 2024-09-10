@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GLTF View</title>
+  <link rel="stylesheet" href="public/index.css">
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    canvas {
+      display: block;
+      flex-grow: 1;
+    }
+
+    #heading {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      /* color: white; */
+    }
+
+    #progress-container {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      /* background: rgba(255, 255, 255, 0.8); */
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    #feature-container {
+      width: 300px;
+      padding: 10px;
+      /* background: #f0f0f0; */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 10;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="heading">
+    <h1>GLTF View<span>
+        <select style="font-size: xx-large;" id="model-dropdown" title="Choose Model">
+          <option value="Falcon">Falcon</option>
+          <option value="Adam Head">Adam Head</option>
+          <option value="BiWaze">BiWaze</option>
+        </select></span></h1>
+    <div class="border"></div>
+
+  </div>
+  <div id="progress-container">
+    <div id="progress">I am not Faster than You Please wait Loading...</div>
+  </div>
+  <div id="feature-container">
+    <h2>Product Features</h2>
+    <div id="features">Click on the model to see features</div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
